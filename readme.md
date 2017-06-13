@@ -86,12 +86,10 @@ class CampaignController extends Controller
 3. View (i.e. resources/views/frontend/image.blade.php):
 ```
 
+
 <html lang="en">
 <head>
 <meta name="_token" content="{{ csrf_token() }}" /> 
-    
-    <!-- ========================== Different Libraries Added: Start ================================= -->
-    
   <title>PHP - jquery ajax crop image before upload using croppie plugins</title>
   <script src="http://demo.itsolutionstuff.com/plugin/jquery.js"></script>
   <script src="http://demo.itsolutionstuff.com/plugin/croppie.js"></script>
@@ -100,8 +98,6 @@ class CampaignController extends Controller
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/croppie.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
-    <!-- ========================== Different Libraries Added: End ================================= -->
   <style>
   	.uploadimg
   	{
@@ -130,14 +126,15 @@ class CampaignController extends Controller
 
 </head>
 <body>
+
 <div class="image-upload">
 		<label for="upload">
-		    				<img src="resources/views/img/campaign.png" style="pointer-events: none"/>
+		    				<img src="resources/views/img/campaign.png" style="cursor: pointer"/>
 		  				</label>
 		<input type="file" id="upload" data-target="#myModal" data-toggle="modal" >
 		
 
-		<div id="upload-demo-i"></div>
+		<div id="upload-demo-i" style="cursor: pointer" onclick="editImage()"></div>
 </div>
 
 
@@ -161,8 +158,7 @@ class CampaignController extends Controller
 
   </div>
 </div>
-<!--JS / AJAX Script Added for Sending Data to Controller: Start-->
-    
+
 <script type="text/javascript">
 $uploadCrop = $('#upload-demo').croppie({
     enableExif: true,
@@ -203,7 +199,7 @@ $('.upload-result').on('click', function (ev) {
 				"_token": "{{ csrf_token() }}",
 				"image":resp
 			},
-			success: function (data) {
+			success: function (data) {//alert(data);
 				html = '<img src="' + resp + '" />';
 				$("#upload-demo-i").html(html);
 				console.log(data);
@@ -211,10 +207,26 @@ $('.upload-result').on('click', function (ev) {
 		});
 	});
 });
+/*This function is added for Image Reupload Facility: Start*/
+function editImage() {
+  //alert("hiiiiiii");
+  
+  location.reload(true);
+  editImage2();
+  
+
+}
+
+function editImage() {
+  $("#upload").click();
+}
+
+/*This function is added for Image Reupload Facility: End*/
+
 
 </script>
 
-<!--JS / AJAX Script Added for Sending Data to Controller: End-->
+
 
 
 </body>
