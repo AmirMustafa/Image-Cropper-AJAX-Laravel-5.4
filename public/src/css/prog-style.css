@@ -1,0 +1,25 @@
+.tooltip{ 
+    position:relative;
+    float:right;
+    width: auto;
+}
+.tooltip > .tooltip-inner {background-color: #999;  padding:3px 9px; color:#fff; font-weight:bold; font-size:14px;}
+.poptool + .tooltip > .tooltip-arrow {	border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #999;}
+
+section{
+  margin:150px auto; 
+}
+.progress{
+  border-radius:0;
+  overflow:visible;
+  border-radius: 10px;
+}
+.progress-bar{
+    background:#0275d8;
+    -webkit-transition: width 1.5s ease-in-out;
+    -moz-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+

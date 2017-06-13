@@ -1,0 +1,1173 @@
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {    
+    .p-camp5-form{margin-left: 45px;}
+    .radio-btn
+    {
+        margin-left: -7px!important;
+    }
+    .campaign-form label {padding-left:10px;} 
+    .camp2-card
+    {
+        margin: 40px 0 40px -30px;
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 500px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+	.footer .list {
+    margin: 10px 10px 0 0;
+	}
+	.footer .newsletter {
+    padding: 20px 10px 20px 0; width:80%; 
+	}
+	.social {
+    margin: 25px 0 10px 0;	
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 8px; 
+	}
+	.form-signin .btn{
+	padding:12px 11%; 	
+	}
+	 .camp_process li {
+    width: 19%!important;}
+/*    4thfeb,2017*/
+        .camp_tab_r  .hrt> a,
+        .camp_tab_r  .shr> a,
+        .camp_tab_r  .drp> a { 
+            margin-left:5px!important; 
+            padding:5px 9px; 
+            }
+/*
+	.camp_tab > li:nth-child(5)> a {	margin-left:250px;pointer-events: auto ;}
+	.camp_tab > li:nth-child(6)> a {	margin-left:7px; }	 
+	.camp_tab > li:nth-child(8)> a { margin-left:7px; } 
+*/
+	.affix-tab{    right: 0;}
+
+.reward { width:auto!important;}
+.new_reward { width:auto!important;}/*31st jan,2017*/
+.fund-details { width:auto!important;}
+.fund-details h4 { 
+        font-size:16px;padding:1px 0;
+    }
+.fund-details h5 { 
+        font-size:12px;padding-bottom:3px ; 
+    }
+.fund-details .prof-nm {
+    padding:3px 0;
+    font-weight:600;font-size:12px!important; 
+}
+.fund-details  .btn-reward{
+	padding:2px 8px;font-weight:500;font-size:11px;margin-top:4px;
+}
+.card{width: 280px;margin-bottom: 30px;}
+
+/*OwlCarousel:start*/
+.owl-carousel .owl-nav{ 
+    right: -12px;
+}
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev
+{
+   width: 31px;
+   height: 31px;
+   line-height: 31px;
+        
+}
+/*OwlCarousel:finished*/
+
+/*
+.camp_tab > li:nth-child(5)> a { 
+   margin-left: 268px!important;
+   padding: 4px 14px!important;
+}
+*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .radio-btn
+    {
+        margin-left: 0px!important;
+    }
+    .campaign-form label {padding-left:1px;} 
+    .camp2-card
+    {
+        margin: 40px 0 40px 0px;
+    }
+    .p-camp4-form{width: 510px;}
+    .p-camp6-form{width: 510px;}
+    .p-camp2-form{width: 450px;margin-left: -30px;}
+    .p-camp5-form{width: 450px;}
+    .rewards{width: 230px;}
+    .bg_pattern
+    {
+        max-width: 300px;
+    }
+    .login> .box
+    {
+       background-color: rgba(255, 255, 255,1); 
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 425px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .card{width: 280px;margin-bottom: 30px;}
+	.footer .newsletter {
+    padding: 20px 40px 20px 0; 
+	}
+	.social {
+    margin: 25px 0 10px 0;
+	float:left;
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 8px; 
+	}
+	.form-signin .btn{
+	padding:12px 13.4%; width:98%;	
+	}
+	 
+	.camp_tab > li > a {
+    padding: 7px 7px!important;font-size:14px!important;
+	}
+/*    4thfeb,2017*/
+    .camp_tab_r  .rew >a
+     {
+         margin-left: -31px;    
+     }
+      .camp_tab_r  .hrt> a,
+      .camp_tab_r  .shr> a,
+      .camp_tab_r  .drp> a
+      {
+         margin-left: 7px;
+      }
+    
+/*OwlCarousel:start*/
+.owl-carousel .owl-nav{ 
+   left:59%;
+}
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev
+{
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+}
+/*OwlCarousel:finished*/    
+
+/*
+	.camp_tab > li:nth-child(5)> a {	margin-left:25px!important;pointer-events: auto ;padding: 4px 14px!important;}
+	.camp_tab > li:nth-child(6)> a {	margin-left:7px; padding: 6px 6px!important;}
+    .camp_tab > li:nth-child(7)> a {	margin-left:7px; padding: 6px 6px!important;}
+	.camp_tab > li:nth-child(8)> a { margin-left:7px; padding: 6px 6px!important;}
+*/
+	.profile-pic {    width: 70px;    height: 70px!important;  }
+	.funding {margin-top:0;}
+	.profile-details .prof-name { padding: 2px 0;}
+	.campain-profile-bg .profile-details {    padding-top: 2px;}
+	.fund-details {padding: 15px!important;width: 223px!important;}
+	.fund-details h4 { 
+	font-size:16px;padding:1px 0;
+    }
+    .fund-details h5 { 
+        font-size:12px;padding-bottom:2px ; 
+    }
+    .fund-details .prof-nm {
+        padding:2px 0;
+        font-weight:600;font-size:12px!important; 
+    }
+    .fund-details  .btn-reward{
+	    padding:2px 9px;font-weight:500;font-size:11px;margin-top:0px;
+    }
+	.profile-details .des { padding: 5px 0; line-height:20px;}
+		 .camp_process li {
+    font-size:14px!important;width:19%;}
+	.rewards {}
+    .reward{margin:20px auto!important;width: 350px!important;}
+    .new_reward{margin: 20px auto!important;width: 350px!important;}
+}
+
+@media screen and (min-width: 640px)  and (max-width: 767px) {
+    .radio-btn
+    {
+        margin-left: -9px!important;
+    }
+    .campaign-form label {padding-left:10px;} 
+    .txt-box{}
+    .bs-step > .bs-step-step .bs-step-stepnum{font-size: 15px!important;}
+    .p-camp4-form{width: 480px;}
+    .p-camp6-form{width: 480px;}
+    .p-camp2-form{width: 540px;}
+    .p-camp5-form{width: 540px;}
+    .bg_pattern
+    {
+        max-width: 270px;
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 425px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%!important;margin-left:10%!important;background: #ccc;
+	}
+  
+
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 35px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.login .modal-dialog{
+        width: 350px;margin :0 auto;
+    }
+	.user-pic{
+	width: 35px;
+	height: 35px;
+    position: relative!important;
+    right: 0px!important;
+    top: 0px!important;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+	 
+	 
+	.form-signin .btn{
+	padding:12px 13.8%; 	
+	}
+
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	.footer .newsletter { 
+    float: none!important; width: 80%!important;margin-left:10%;
+	}
+	
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.form-signin .btn{
+	padding:12px 10%; 	
+	}
+	.footer .list {
+    margin: 10px  0 0 100px;
+	}
+    .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+/*
+	.camp_tab > li > a {
+    padding: 7px 13px!important;font-size:14px!important;
+	}
+	
+	.camp_tab > li:nth-child(5)> a {	margin-left:3px!important;pointer-events: auto ;}
+	.camp_tab > li:nth-child(6)> a {	margin-left:3px;padding: 7px 10px!important;}
+	.camp_tab > li:nth-child(8)> a {	margin-left:3px;padding: 7px 12px!important;}
+*/
+	.affix-tab{    right: 0;}
+	.funding {margin-top:0!important;}
+	.camp_process li {
+   width:auto;
+	padding-left:10px; 
+	padding-right:10px;} .setting textarea, .setting input[type="text"], .setting input[type="password"], .setting input[type="email"] {
+    width: 100%; }
+     .reward { width:350px!important;margin: 20px auto!important;}
+    
+    .card-stage .progress 
+    {
+        margin-bottom: 15px;
+    }
+    .card{width: 280px;margin-bottom: 30px;}
+/*OwlCarousel:start*/
+.owl-carousel .owl-nav{ 
+    left: 61%;     
+}
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev
+{
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+}
+/*OwlCarousel:finished*/ 
+}
+ 
+@media screen and (min-width: 570px) and (max-width: 639px) {
+    .radio-btn{margin-left: 0px!important;}
+    .txt-box{padding-right: 14px;}
+    .campaign-form label {padding-left:1px;} 
+    .bs-step > .bs-step-step .bs-step-stepnum{font-size: 14px!important;}
+    .p-camp4-form{width: 450px;}
+    .p-camp6-form{width: 450px;}
+    .p-camp2-form{width: 450px;}
+    .p-camp5-form{width: 450px;}
+    .bg_pattern
+    {
+        max-width: 240px;
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 400px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%;margin-left:10%;background: #ccc;
+	}
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	 .footer .list {
+    margin: 10px  0 0 60px;
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.login .modal-dialog{
+        width: 350px;margin :auto;
+    }
+	.user-pic{
+	width: 35px;
+	height: 35px;
+    position: relative!important;
+    right: 0px!important;
+    top: 0px!important;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+	 
+	.form-signin .btn{
+	padding:12px 13.8%; 	
+	}
+
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	.footer .newsletter { 
+    float: none; width: 80%;margin-left:10%;
+	}
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.form-signin .btn{
+	padding:12px 10%; width:98%;	
+	}
+/*	 .camp_tab > li:nth-child(5)> a {	margin-left:140px;pointer-events: auto ;}*/
+	 .footer .newsletter { 
+    float: none!important; width: 80%!important;margin-left:10%;
+	}
+
+/*
+	.camp_tab > li > a {
+    padding: 7px 15px!important;font-size:14px!important;
+	}
+	
+	.camp_tab > li:nth-child(5)> a {	margin-left:10px!important;pointer-events: auto ;}
+	.camp_tab > li:nth-child(6)> a {	margin-left:4px;padding: 7px 10px!important;}
+	.camp_tab > li:nth-child(8)> a {	display:none!important;}
+*/
+	.affix-tab{    right: 0;}
+	.funding {margin-top:0!important;}
+	.camp_process li {
+   width:auto;
+	padding-left:10px; 
+	padding-right:10px;}
+	 .setting textarea, .setting input[type="text"], .setting input[type="password"], .setting input[type="email"] {
+    width: 100%; }
+    .card-stage .progress 
+    {
+        margin-bottom: 12px;
+    }
+        .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+        .card{width: 280px;margin-bottom: 30px;}
+    /*OwlCarousel:start*/
+    .owl-carousel .owl-nav{ 
+        left: 61%;
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev
+    {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+    }
+    /*OwlCarousel:finished*/
+    .reward{margin: 20px auto!important;}
+}
+
+ 
+@media screen and (min-width: 481px) and (max-width: 569px) {
+    .radio-btn{margin-left: 0px!important;margin-bottom: 10px!important;}
+    .txt-box{padding-right: 14px;}
+    .campaign-form label {padding-left:1px;} 
+    .bs-step > .bs-step-step .bs-step-stepnum{font-size: 13px!important;}
+    .p-camp4-form{width: 410px;}
+    .p-camp6-form{width: 410px;}
+    .p-camp2-form{width: 410px;}
+    .p-camp5-form{width: 410px;}
+    .bg_pattern
+    {
+        max-width: 210px;
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 375px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%!important; margin-left:10%!important; background: #ccc;
+	}
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	 
+	.user-pic{
+	width: 35px;
+	height: 35px;
+    position: relative!important;
+    right: 0px!important;
+    top: 0px!important;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+	 
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.form-signin .btn{
+	padding:12px 20px; 	width:95%;
+	}
+	
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	 
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.login .modal-dialog{
+         width: 350px;margin :0 auto;
+    }
+	 
+	  .profile-pic {  height: 100px!important;}
+/*
+	.camp_tab {padding-top:5px;}
+	.camp_tab > li > a { 
+    padding: 2px 8px!important; font-size:12px;
+	}
+	 
+	 
+	 .camp_tab > li:nth-child(5)> a {	margin-left:100px!important; pointer-events: auto !important; font-size:12px!important}
+	  .camp_tab > li:nth-child(6)> a {margin-left:10px!important;font-size:12px!important;padding: 2px 5px!important;}
+	  .camp_tab > li:nth-child(8)> a {display:none;}
+*/
+	.funding {    margin-top: 0px!important;}
+	.footer .newsletter { 
+    float: none!important; width: 80%!important;margin-left:10%;
+	}
+	.camp_process li {
+   width:auto;font-size:12.8px;
+	padding-left:2px; 
+	padding-right:2px;}
+	.profiler {padding-top:10px;}
+	.profiler .name {font-size:20px;}  
+	.profiler .backd {font-size:14px;float:none; }
+.setting textarea, .setting input[type="text"], .setting input[type="password"], .setting input[type="email"] {
+    width: 100%; }
+    .card-stage .progress 
+    {
+        margin-bottom: 10px;
+    }
+        .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+            .card{width: 280px;margin-bottom: 30px;}
+    /*OwlCarousel:start*/
+    .owl-carousel .owl-nav{ 
+        left: 64%;
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev
+    {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+    }
+    /*OwlCarousel:finished*/
+    .reward{margin: 20px auto!important;}
+}
+
+
+@media screen and (min-width: 421px) and (max-width: 480px) {
+    .p-camp4-form{width: 380px;}
+    .p-camp6-form{width: 380px;}
+    .p-camp2-form{width: 380px;}
+    .p-camp5-form{width: 380px;}
+    .bg_pattern
+    {
+        max-width: 180px;
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 360px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%;margin-left:10%!important;background: #ccc;
+	}
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	 
+	.user-pic{
+	width: 35px;
+	height: 35px;
+    position: relative!important;
+    right: 0px!important;
+    top: 0px!important;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+	 
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.form-signin .btn{
+	padding:12px 9%; 	
+	}
+	
+	.footer .list { margin-left:20px;	}
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	.footer .newsletter { 
+    float: none!important; width: 80%!important;margin-left:10%;
+	}
+	.navbar-right {
+    float: none !important;
+    margin-right: 0%;
+	}
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.login .modal-dialog{
+       width: 350px;margin :0 auto;
+    }
+	.profile-pic {  height: 100px!important;}
+	.camp_tab {padding-top:5px;}
+	.camp_tab > li > a { 
+    padding: 2px 8px!important; font-size:12px;
+	}
+	.footer .newsletter { 
+    float: none!important; width: 80%!important;margin-left:10%;
+	}
+	.tabbable .tab-btn a { 
+    padding: 10px 125px;
+	}
+        .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+	 
+/*
+	 .camp_tab > li:nth-child(5)> a {	margin-left:15px!important; pointer-events: auto !important; font-size:12px!important}
+	  .camp_tab > li:nth-child(6)> a {margin-left:2px!important;font-size:12px!important;padding: 2px 5px!important;}
+	  .camp_tab > li:nth-child(8)> a {display:none;}
+*/
+	.funding {    margin-top: 0px!important;}
+	.camp_process li {
+   width:auto;font-size:12px;
+	 }
+	.setting textarea, .setting input[type="text"], .setting input[type="password"], .setting input[type="email"] {
+    width: 100%; }.affix-tab .proj-ttl {display:block; font-size:16px;}
+    .card-stage .progress 
+    {
+        margin-bottom: 10px;
+    }
+                .card{width: 280px;margin-bottom: 30px;}
+    /*OwlCarousel:start*/
+    .owl-carousel .owl-nav{ 
+        left: 66%;
+
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev
+    {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+    }
+    /*OwlCarousel:finished*/
+    
+}
+
+@media screen and (min-width: 361px) and (max-width: 420px) {
+    .p-camp4-form{width: 320px;}
+    .p-camp6-form{width: 320px;}
+    .p-camp2-form{width: 320px;}
+    .p-camp5-form{width: 320px;}
+    .bg_pattern
+    {
+        max-width: 165px;
+    }
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 340px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .sbtn-align
+    {
+        margin-left: 3px!important;
+        margin-top: 6px!important;
+        margin-bottom: 9px!important;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .black-transparent, .login-form, .camp-form1
+    {
+        width: 320px;
+    }
+    .navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%;margin-left:10%!important;background: #ccc;
+	}
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	 
+	.user-pic{
+	width: 35px;
+	height: 35px;
+    position: relative!important;
+    right: 0px!important;
+    top: 0px!important;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+	 
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.form-signin .btn{
+	padding:12px 9%; 	
+	}
+	
+	.footer .list { margin-left:20px;	}
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	.footer .newsletter { 
+    float: none!important; width: 80%!important;margin-left:10%;
+	}
+	.navbar-right {
+    float: none !important;
+    margin-right: 0%;
+	}
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.login .modal-dialog{
+       width: 350px;margin :0 auto;
+    }
+	.profile-pic {  height: 95px!important;}
+    .card-stage .progress 
+    {
+        margin-bottom: 10px;
+    }
+    .card{width: 280px;margin-bottom: 30px;}
+    /*OwlCarousel:start*/
+    .owl-carousel .owl-nav{ 
+        left: 68%;
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev
+    {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+    }
+    /*OwlCarousel:finished*/
+        .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 300px;
+        margin: auto;
+        margin-top: 7px;
+    }
+    .sbtn-align
+    {
+        margin-left: -12px!important;
+        margin-top: 6px!important;
+        margin-bottom: 9px!important;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+    .navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%;margin-left:10%!important;background: #ccc;
+	}
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.funding {    margin-top: 0px!important;}
+    .profile-pic {  height: 85px!important;}
+	.user-pic{
+	width: 35px;
+	height: 35px;
+    position: relative!important;
+    right: 0px!important;
+    top: 0px!important;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+	 
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.form-signin .btn{
+	padding:12px 9%; 	
+	}
+	
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	.footer .newsletter { 
+    float: none!important; width: 80%;margin-left:10%;
+	}
+	.navbar-right {
+    float: none !important;
+    margin-right: 0%;
+	}
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.login .modal-dialog{
+       width: 350px;margin :0 auto;
+    }
+/*
+	.camp_tab > li {}
+	.camp_tab > li > a { 
+    padding: 2px 1.5px!important; font-size:12px;
+	}
+*/
+	.tabbable .tab-btn a { 
+    padding: 10px 125px;
+	}
+	
+ .setting textarea, .setting input[type="text"], .setting input[type="password"], .setting input[type="email"] {
+    width: 100%; }
+
+/*
+	.camp_tab > li > a {    padding: 9px 10px;}
+	 .camp_tab > li:nth-child(5)> a {	margin-left:20px; pointer-events: auto !important; font-size:11px!important}
+	  .camp_tab > li:nth-child(6)> a {margin-left:20px!important;font-size:12px!important;padding: 2px 5px!important;}
+	  .camp_tab > li:nth-child(8)> a {display:none;}
+	.camp_tab > li.active > a { border-bottom:none;}
+*/
+	.affix-tab .proj-ttl {display:block; font-size:16px;}
+        .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+    .card{width: 280px;margin-bottom: 30px;}
+    /*OwlCarousel:start*/
+    .owl-carousel .owl-nav{ 
+        left: 72%;
+
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-prev
+    {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    /*OwlCarousel:finished*/
+  
+	
+}
+/*4thfeb,2017*/
+@media only screen and (max-width: 1200px) 
+{    
+    .back-btn{padding-left: 15px!important;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px)
+    {
+        .p-camp5-form{margin:20px auto!important;}
+        .rewards{margin:20px auto!important;}  
+        .camp2-card, .p-camp2-form{margin: auto;}
+        .camp2-card{margin: 40px auto;}
+        .owl-carousel .owl-nav
+        {
+            top:-59px;
+        }
+        .bg_pattern
+        {
+            margin-top: -15px;
+        }
+        .login> .box
+        {
+            background-color: rgba(255, 255, 255,1);
+        }
+
+        .login .modal-dialog
+        {
+            width: 300px;
+        }
+        .adress .modal-dialog{
+            width: 300px;
+        }
+        .login .social .circle{
+        margin: 0 20px;
+        padding:11px 7px;width:40px;height:40px;
+        }
+        .modal-dialog
+        {
+            margin: 30px auto!important;
+        }
+        .pace
+        {
+            display: none;
+        }
+        .main-heading
+        {
+            padding: 5px 0px 25px 0px;
+        }
+        .camp_tab_r
+        {
+            background-color: #f8f8f9;padding-left: 0px;padding-right: 0px;padding-bottom: 0px; margin-left: 0px;margin-right: 0px;margin-bottom: 0px;margin-top: 0px
+        }
+   
+        .tmline
+        {
+            display: none!important;
+        }
+        .cmnts
+        {
+            display: none!important;
+        }
+        .cmnty
+        {
+            display: none!important;
+        }
+        .navbar-nav>li.active>a {
+            color: #0275d8;
+        }
+        .camp_tab> li> a
+        {
+            color:#0275d8!important;
+            padding:9px 9px!important;
+        }
+    }
+
+
+@media only screen  and (max-width: 640px)
+     {
+
+    /*host card for xs screen:start*/
+    .fund-details-xs {
+        padding-top:15px;padding-bottom: 15px; color:#595959;width: 100%;	
+        background:#fff;border:1px solid #fff;
+        border-radius:8px;position:relative;margin:0 auto;height: 198px!important;
+    }
+
+    .fund-details-xs .prof-nm {
+        padding:5px 0;text-transform:capitalize;margin-left: 5px;
+        font-weight:600;font-size:15px!important;color: #595959; 
+    }
+
+    .fund-details-xs h4 { 
+        color:#777;margin-left: 5px;
+        font-size:15px;padding:2px 0;text-transform:capitalize;
+    }
+    .fund-details-xs h5 { 
+        font-size:12px;padding-bottom:5px ;margin-left: 5px;
+    }
+    .fund-details-xs h3 { 
+        font-size:12px;padding-bottom:5px ;margin-left: 5px;
+    }
+    .fund-details-xs h6 { 
+        font-size:15px;padding-bottom:5px ;margin-left: 5px;
+    }
+    .fund-details-xs  .btn-reward{
+        padding:2px 12px;margin-left: 5px;
+        font-size:11px;margin-top:8px;
+       
+    }
+     .fund-details-xs .host-pic
+         {
+             width: 54px;height: 54px;
+         }
+
+  
+    .ver-align-r{border-right: 2px solid #ccc;margin: 0px; padding-top:-15px; height:auto!important; }
+    /*.ver-align-l{border-left: 2px solid #999;margin: 0px; padding:0px; height:auto!important; }*/
+    /*host card for xs screen:end*/
+     }
+@media only screen and (max-width: 480px) {
+        .radio-btn{margin-left: 0px!important;margin-bottom: 10px!important;}
+        .txt-box{padding-right: 14px;}
+        .campaign-form label {padding-left:1px;}
+        .bs-step > .bs-step-step .bs-step-stepnum{font-size: 12px!important;}    
+        .login .modal-dialog
+        {
+            width: 280px;
+        }
+        .adress .modal-dialog{
+            width: 280px;
+        }
+        .login .social .circle{
+            margin: 0 20px;
+            padding:9px 5px;width:35px;height:35px;
+        }
+        .reward{margin: 20px auto!important;}
+
+}
+
+@media only screen and (max-width: 360px) {
+    .camp2-card{width: 280px;}
+    .p-camp4-form{width: 280px;}
+    .p-camp6-form{width: 280px;}
+    .p-camp2-form{width: 280px;}
+    .p-camp5-form{width: 280px;}
+    .bg_pattern
+    {
+        max-width: 150px;
+    }
+    .login .modal-dialog
+    {
+        width: 99%;
+    }
+    .share_popup .modal-dialog
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .card-stage .progress 
+    {
+        margin-bottom: 5px;
+    }
+    .black-transparent, .login-form, .camp-form1
+    {
+        width: 275px!important;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .camp2-card{width: 260px;}
+    #page-content-wrapper .well,#page-content-wrapper .save-div
+    {
+        width: 280px;
+        margin:0 auto;
+        margin-top: 7px;
+    }
+    .sbtn-align
+    {
+        margin-left: -12px!important;
+        margin-top: 6px!important;
+        margin-bottom: 9px!important;
+    }
+    /*spotlight margin left-right8th feb*/
+    .mrg
+    {
+        margin-left: -15px!important;margin-right: -15px!important;
+    }
+	.navbar-right {
+		float:none!important; 
+	}
+	.search-box .form-control {
+		width:80%;margin-left:10%;background: #ccc;
+	}
+	.search-box .fa {
+    right: 10%!important;
+    top: -3px!important;  
+	}
+	.footer .newsletter .input-group-addon{ 
+	 padding: 6px 6px; 
+	}
+	.navbar-default .navbar-nav > li > a > span {
+		display:block;
+	}
+	.login .modal-dialog{
+        width: 18%;
+    }
+	.user-pic{
+	width: 35px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+	}
+	.user-menu{margin-top:0px!important;text-align:center}
+
+	.avatar-btns button {
+	    width: 100%;
+	} 
+	.footer .text-right,.text-center{text-align:center; padding:15px;}
+	.footer .newsletter { 
+    float: none!important; width: 80%;margin-left:10%;
+	}
+	.sub-footer {text-align:center}
+	.sub-footer li { 
+	padding-right: 0px;
+	padding-left: 7px;}
+	.form-signin .btn{
+	padding:12px 28px; 	
+	}
+	.login .modal-dialog {
+    width: 350px;
+	}
+    .card-stage .progress 
+    {
+        margin-bottom: 5px;
+    }
+        .fund-details .btn-reward
+    {
+        margin-top: 0px!important;
+    }
+        .login-form, .camp-form1
+        {
+            width: 300px;
+        }
+        .black-transparent
+        {
+            width: 300px;
+            margin-top:50px;
+        }
+        .login .modal-dialog
+        {
+            width: 260px;
+        }
+        .adress .modal-dialog{
+            width: 260px;
+        }
+        .login .social .circle{
+            margin: 0 10px;
+            padding:9px 5px;width:35px;height:35px;
+        }
+        .card{width: 250px;margin-bottom: 30px;}
+        /*OwlCarousel:start*/
+        .owl-carousel .owl-nav{ 
+            left: 73%;
+
+        }
+        .owl-carousel .owl-nav .owl-next,
+        .owl-carousel .owl-nav .owl-prev
+        {
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+        }
+        /*OwlCarousel:finished*/
+}
+
+

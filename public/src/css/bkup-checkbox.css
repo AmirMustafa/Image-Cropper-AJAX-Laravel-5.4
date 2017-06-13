@@ -1,0 +1,39 @@
+
+
+.checkbox-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.checkbox-custom{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.checkbox-custom + :before {
+    content: '';
+    background: #fff;
+    border: 1px solid #000;
+    border-radius:4px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size:10px;
+}
+
+.checkbox-custom:checked +:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    background: #337AB7;
+    color: #fff;
+}
+
+
+
+
+

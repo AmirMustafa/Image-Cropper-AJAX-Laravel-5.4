@@ -1,0 +1,42 @@
+  .radio-custom-label, .inputGroup .radio-custom-label {
+    color: rgba(0,0,0,.8);
+    margin: 5px 0;
+}
+ 
+ .label, .inputGroup .label {
+    font-size: 14px;
+    color: rgba(0,0,0,.44);
+    margin: 4px;
+}
+ 
+.label {
+    color: #333;
+    line-height: 1.4;
+    font-weight: 500;
+}
+  
+.u-hide {
+    display: none!important;
+}
+ .radioInput {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    margin-top: -3px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 100%;
+}
+.radio:checked+.radioInput:after, .radioInput.is-active:after {
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 10px;
+    left: 2px;
+    top: 2px;
+    display: block;
+    background-color: #0275d8;
+    border-radius: 100%;
+}

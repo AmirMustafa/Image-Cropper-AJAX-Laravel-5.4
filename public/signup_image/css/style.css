@@ -1,0 +1,162 @@
+/*
+* Author : Ali Aboussebaba
+* Email : bewebdeveloper@gmail.com
+* Website : http://www.bewebdeveloper.com
+* Subject : Crop photo using PHP and jQuery
+*/
+
+* {
+
+}
+body {
+
+}
+.container {
+
+}
+.header {
+
+}
+.main_title {
+
+}
+.content {
+
+}
+.upload_btn {
+	background: #cccccc;
+	color: #333333;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	cursor: pointer;
+}
+#photo_container {
+	
+}
+.upload_btn:hover {
+	background: #eaeaea;
+}
+
+/* popup --------------------------*/
+#popup_upload,
+#popup_crop {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0 ,0, 0.7);
+	z-index: 99;
+	text-align: center;
+	display: none;
+	overflow: auto;
+}
+.form_upload {
+	width: 350px;
+	height: 170px!important;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	background: #ffffff;
+	color: #666666;
+	margin: auto;
+	margin-top: 160px;
+	padding: 10px;
+	text-align: left;
+	position: relative;
+}
+.form_upload h2 {
+
+}
+.upload_frame {
+	width: 0;
+	height: 0;
+	display: none;
+}
+.file_input {
+	width: 97%;
+	background: #fff;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	color: #333333;
+	padding: 1%;
+	margin: 20px auto;
+}
+
+.close {
+    position: absolute;
+    display: block;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #F0F0F0;
+    text-align: center;
+    font-weight: bold;
+}
+.close:hover {
+    background: #cccccc;
+}
+#loading_progress {
+    float: left;
+    line-height: 18px;
+    padding: 8px 0 0 0;
+}
+#loading_progress img {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 16px !important;
+}
+.form_crop {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	background: #ffffff;
+	color: #666666;
+	margin: auto;
+	margin-top: 40px;
+	padding: 10px;
+	text-align: left;
+	position: relative;
+}
+.form_crop h2 {
+	border-bottom: 1px solid #999999;
+	padding: 0 0 5px 0;
+	margin: 0 0 20px 0;
+}
+#target {
+	background-color: #ccc;
+	width: 500px;
+	height: 330px;
+	font-size: 24px;
+	display: block;
+}
+#crop_btn {
+	background: #cccccc;
+	color: #333333;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	float: right;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial;
+	display: block;
+	padding: 5px;
+	margin: 10px 0 0 0;
+	cursor: pointer;
+}
+#crop_btn:hover {
+	background: #eaeaea;
+}
+
