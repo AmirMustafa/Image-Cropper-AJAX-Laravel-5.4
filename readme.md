@@ -1,52 +1,271 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Image-Cropper-AJAX-Laravel-5.4
+This project is developed in Laravel 5.4. Before actual submitting the form you can crop it. Image will be reflected real time and at the same time, image will be saved in the folder
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Installation
 
-## About Laravel
+1. Download or Clone the repository 
+2. Keep this project in server or XAMPP
+3. Click on the default image.(Acts as a browse button). After cropping image will be reflected there itself in realtime
+4. I have commented the code properly for better understanding
+5. Image will be uploaded in resources/views/upload directory
+6. You can reupload the image
+## Snippet
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+1. Routes(i.e. routes/web.php):
+```
+Route::get('/', function () {
+    //return view('welcome');
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    return view('frontend.image');
+})->name('/');
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Route::post('/postImage', [
+	'uses' => 'CampaignController@postImage',
+	'as' => 'postImage'
+]);
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+```
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+2. Controller (i.e. app/http/controllers/CampaignController):
+```
+<?php
 
-## Laravel Sponsors
+namespace App\Http\Controllers;
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+use App\User;
+use App\Http\Controllers\Controller;
+use DB;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
+use Session;
+use Illuminate\Contracts\Validation\Validator;
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- **[Codecourse](https://www.codecourse.com)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
 
-## Contributing
+session_start();
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+class CampaignController extends Controller
+{
+	
+		public function image() {
+			return view('frontend.image');
+		}
 
-## Security Vulnerabilities
+		public function postImage() {
+			//echo "HIIIIII";
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+			$data = $_POST['image'];
+
+			list($type, $data) = explode(';', $data);
+			list(, $data)      = explode(',', $data);
+
+			$data = base64_decode($data);
+			$imageName = time().'.png';
+			file_put_contents('resources/views/upload/'.$imageName, $data);
+
+			echo "Image Uploaded";
+		}
+
+
+/* ============ Added for Image Cropper of Campaign Card: End ============ */
+
+
+
+
+
+
+
+
+
+		
+}	/*End CampaignController Class*/
+
+
+```
+
+3. View (i.e. resources/views/frontend/image.blade.php):
+```
+
+<html lang="en">
+<head>
+<meta name="_token" content="{{ csrf_token() }}" /> 
+    
+    <!-- ========================== Different Libraries Added: Start ================================= -->
+    
+  <title>PHP - jquery ajax crop image before upload using croppie plugins</title>
+  <script src="http://demo.itsolutionstuff.com/plugin/jquery.js"></script>
+  <script src="http://demo.itsolutionstuff.com/plugin/croppie.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/croppie.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- ========================== Different Libraries Added: End ================================= -->
+  <style>
+  	.uploadimg
+  	{
+  		position: absolute;
+  		top:0;
+  	}
+  	#upload-demo
+  	{
+  		position: relative;
+  	}
+
+  .image-upload > input {
+  	visibility:hidden;
+  	width:0;
+  	height:0;
+  	background:transparent;
+}
+
+#upload-demo-i
+{
+	position: absolute;
+	top:0;
+}
+  </style>
+
+
+</head>
+<body>
+<div class="image-upload">
+		<label for="upload">
+		    				<img src="resources/views/img/campaign.png" style="pointer-events: none"/>
+		  				</label>
+		<input type="file" id="upload" data-target="#myModal" data-toggle="modal" >
+		
+
+		<div id="upload-demo-i"></div>
+</div>
+
+
+  <div id="myModal" class="modal fade " role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      	<div class="modal-header">
+        	<button type="button"   style=" "class="close" data-dismiss="modal">&times;</button>
+      
+      	</div>
+      	<div class="modal-body">
+          
+      		<div id="upload-demo" style="width:350px"></div>
+
+      		<button class="btn btn-success upload-result" data-dismiss="modal">Upload Image</button>
+     
+    	</div>
+    </div>
+
+  </div>
+</div>
+<!--JS / AJAX Script Added for Sending Data to Controller: Start-->
+    
+<script type="text/javascript">
+$uploadCrop = $('#upload-demo').croppie({
+    enableExif: true,
+    viewport: {
+        width: 300,
+        height: 225,
+        type: 'rectangle'
+    },
+    boundary: {
+        width: 300,
+        height: 300
+    }
+});
+
+$('#upload').on('change', function () { 
+	var reader = new FileReader();
+    reader.onload = function (e) {
+    	$uploadCrop.croppie('bind', {
+    		url: e.target.result
+    	}).then(function(){
+    		console.log('jQuery bind complete');
+    	});
+    	
+    }
+    reader.readAsDataURL(this.files[0]);
+});
+
+$('.upload-result').on('click', function (ev) {
+	$uploadCrop.croppie('result', {
+		type: 'canvas',
+		size: 'viewport'
+	}).then(function (resp) {
+
+	$.ajax({
+			url: "postImage",
+			type: "POST",
+			data: {
+				"_token": "{{ csrf_token() }}",
+				"image":resp
+			},
+			success: function (data) {
+				html = '<img src="' + resp + '" />';
+				$("#upload-demo-i").html(html);
+				console.log(data);
+			}
+		});
+	});
+});
+
+</script>
+
+<!--JS / AJAX Script Added for Sending Data to Controller: End-->
+
+
+</body>
+</html>
+
+
+
+
+
+```
+	
+
+## Looks
+
+![Screenshot of Laravel Image Cropper](https://user-images.githubusercontent.com/15896579/26936867-75a08e48-4c8d-11e7-974e-71278841b7e9.png?raw=true "Screenshot of Laravel Image Cropper")
+<br/><br/><br/>
+
+![Screenshot of Laravel Image Cropper](https://user-images.githubusercontent.com/15896579/26936868-776371aa-4c8d-11e7-9462-0d8136d8a47d.png?raw=true "Screenshot of Laravel Image Cropper")
+<br/><br/><br/>
+
+![Screenshot of Laravel Image Cropper](https://user-images.githubusercontent.com/15896579/26936871-794e62ea-4c8d-11e7-9eef-9d1254df57b3.png?raw=true "Screenshot of Laravel Image Cropper")
+<br/><br/><br/>
+
+![Screenshot of Laravel Image Cropper](https://user-images.githubusercontent.com/15896579/26936876-7b7b8ebc-4c8d-11e7-9ee7-b8449e41b8d3.png?raw=true "Screenshot of Laravel Image Cropper")
+<br/><br/><br/>
+
+![Screenshot of Laravel Image Cropper](https://user-images.githubusercontent.com/15896579/26936880-7daa8c7e-4c8d-11e7-8ee7-11631ec8a86a.png?raw=true "Screenshot of Laravel Image Cropper")
+<br/><br/><br/>
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+(The MIT License)
+
+Copyright (c) 2017 Amir Mustafa
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
