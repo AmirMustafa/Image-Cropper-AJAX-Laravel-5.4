@@ -9,6 +9,8 @@ This project is developed in Laravel 5.4. Before actual submitting the form you 
 4. I have commented the code properly for better understanding
 5. Image will be uploaded in resources/views/upload directory
 6. You can reupload the image
+7. Extract vendor.zip in root directory
+
 ## Snippet
 
 1. Routes(i.e. routes/web.php):
